@@ -6,8 +6,8 @@
 	(paper "A5")
 	(title_block
 		(title "LEOS CANbus")
-		(date "2026-08-04")
-		(rev "3.0")
+		(date "2026-10-05")
+		(rev "1.0")
 		(company "VIP Lightning From the Edge of Space")
 	)
 	(lib_symbols
@@ -1756,7 +1756,7 @@
 	)
 	(text "Decoupling capacitors.\nThese must be placed close to the power pins on the ICs."
 		(exclude_from_sim no)
-		(at 16.002 105.918 0)
+		(at 123.19 28.956 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1772,10 +1772,34 @@
 		(uuid "034663e2-c0d2-4da0-94fa-0ea780953d2e")
 	)
 	(junction
+		(at 147.32 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b05056b-774a-4f22-b0f0-3b912b15b231")
+	)
+	(junction
 		(at 160.02 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "260a3a9a-e320-4b79-8584-7e4575c6ff36")
+	)
+	(junction
+		(at 134.62 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "35c559b2-4d0e-4c47-9786-76bce1a9bb31")
+	)
+	(junction
+		(at 78.74 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ca3649a-fbf0-4882-b552-51fe623b7267")
+	)
+	(junction
+		(at 125.73 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e47d72d-a588-4524-8762-6b007e30bca9")
 	)
 	(junction
 		(at 96.52 74.93)
@@ -1790,10 +1814,28 @@
 		(uuid "8b5409d0-d92d-4174-b0a0-40cadda2385a")
 	)
 	(junction
+		(at 144.78 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8dab3942-e3cd-4c83-9a04-4ecc166a5263")
+	)
+	(junction
+		(at 69.85 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9fbe3609-52cf-43ca-a6d1-d751dcce0e6f")
+	)
+	(junction
 		(at 113.03 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aa946d87-480d-41b1-810c-f21d2b040d13")
+	)
+	(junction
+		(at 66.04 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf443b48-73db-409f-9c26-cbecb69a96ec")
 	)
 	(junction
 		(at 113.03 80.01)
@@ -1845,7 +1887,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 52.07) (xy 147.32 55.88)
+			(xy 147.32 38.1) (xy 147.32 40.64)
 		)
 		(stroke
 			(width 0)
@@ -1865,16 +1907,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 115.57) (xy 39.37 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "242b33e1-911c-4ed0-be31-3f9081f0919d")
-	)
-	(wire
-		(pts
 			(xy 163.83 66.04) (xy 163.83 67.31)
 		)
 		(stroke
@@ -1885,23 +1917,33 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 124.46) (xy 39.37 125.73)
+			(xy 66.04 40.64) (xy 66.04 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "43d7e259-e545-4fbe-94d4-fdae14b2ae2d")
+		(uuid "3414c60b-39d5-4683-81a7-6962fbd7c79e")
 	)
 	(wire
 		(pts
-			(xy 29.21 115.57) (xy 29.21 116.84)
+			(xy 134.62 40.64) (xy 144.78 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54448d58-54d2-4019-a305-6c54c2c42be2")
+		(uuid "48539976-cd9c-432d-a314-4ae9631353af")
+	)
+	(wire
+		(pts
+			(xy 66.04 40.64) (xy 69.85 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53c2d453-f539-44c7-a6c6-3f068137eb67")
 	)
 	(wire
 		(pts
@@ -1925,6 +1967,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 40.64) (xy 78.74 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "641eb42e-43fa-4e78-ba24-0906c471ff6a")
+	)
+	(wire
+		(pts
 			(xy 66.04 87.63) (xy 66.04 86.36)
 		)
 		(stroke
@@ -1945,6 +1997,26 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 48.26) (xy 78.74 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a584ca2-4fb2-4391-a862-990fdfe16edc")
+	)
+	(wire
+		(pts
+			(xy 125.73 40.64) (xy 134.62 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d13eed1-e9a2-45a8-849c-2db6099723a2")
+	)
+	(wire
+		(pts
 			(xy 104.14 74.93) (xy 96.52 74.93)
 		)
 		(stroke
@@ -1955,7 +2027,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 52.07) (xy 144.78 55.88)
+			(xy 144.78 38.1) (xy 144.78 40.64)
 		)
 		(stroke
 			(width 0)
@@ -1985,13 +2057,43 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 55.88) (xy 66.04 58.42)
+			(xy 144.78 40.64) (xy 144.78 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f9c8f27-c178-4915-9372-ed91e69fd5aa")
+	)
+	(wire
+		(pts
+			(xy 125.73 48.26) (xy 134.62 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95e52634-a1c4-4709-8160-ce6a1ab61a70")
+	)
+	(wire
+		(pts
+			(xy 66.04 38.1) (xy 66.04 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9b18722e-6da1-44d1-baeb-da5bad89532f")
+	)
+	(wire
+		(pts
+			(xy 147.32 40.64) (xy 147.32 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e627a5d-0832-4c75-92e2-c1fab1efb4fb")
 	)
 	(wire
 		(pts
@@ -2032,6 +2134,16 @@
 			(type default)
 		)
 		(uuid "adda8fef-13b8-44b6-8405-5e5cd598b0af")
+	)
+	(wire
+		(pts
+			(xy 147.32 40.64) (xy 152.4 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afa536f3-ff99-4af7-a858-657299a75979")
 	)
 	(wire
 		(pts
@@ -2105,26 +2217,6 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 124.46) (xy 29.21 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dfd68dd0-94e7-4b0a-a39e-2a781738421e")
-	)
-	(wire
-		(pts
-			(xy 19.05 124.46) (xy 19.05 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1482be5-ef19-4867-94d4-f477c0364522")
-	)
-	(wire
-		(pts
 			(xy 109.22 80.01) (xy 113.03 80.01)
 		)
 		(stroke
@@ -2142,16 +2234,6 @@
 			(type default)
 		)
 		(uuid "e5fccd1e-5d37-4435-a816-5aa7146ad877")
-	)
-	(wire
-		(pts
-			(xy 19.05 115.57) (xy 19.05 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec89569c-d89a-4322-bcd1-e87c5b278091")
 	)
 	(label "OSC1"
 		(at 81.28 80.01 0)
@@ -2272,7 +2354,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 19.05 125.73 0)
+		(at 78.74 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2283,7 +2365,7 @@
 		(fields_autoplaced yes)
 		(uuid "15d27e40-3ece-4a7e-8c6a-ce3dd94eb995")
 		(property "Reference" "#PWR05"
-			(at 19.05 132.08 0)
+			(at 78.74 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2294,7 +2376,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 19.05 130.81 0)
+			(at 78.74 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2304,7 +2386,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 19.05 125.73 0)
+			(at 78.74 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2315,7 +2397,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 19.05 125.73 0)
+			(at 78.74 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2326,7 +2408,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 19.05 125.73 0)
+			(at 78.74 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2340,7 +2422,7 @@
 			(uuid "52831481-283e-423a-815f-433ab7b944d2")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
 					(reference "#PWR05")
 					(unit 1)
@@ -2349,8 +2431,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 39.37 115.57 0)
+		(lib_id "Device:C")
+		(at 78.74 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2358,31 +2440,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "16b5f319-2bcd-4fa6-97d0-0dbd3efc380e")
-		(property "Reference" "#PWR08"
-			(at 39.37 119.38 0)
-			(hide yes)
+		(uuid "32b75afc-b2fe-4ad6-8a2b-6c50dbe272f2")
+		(property "Reference" "C4"
+			(at 79.502 42.418 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "+5V"
-			(at 39.37 110.49 0)
+		(property "Value" "1u"
+			(at 80.518 46.736 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 39.37 115.57 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 79.7052 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2393,7 +2475,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 115.57 0)
+			(at 78.74 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2403,8 +2485,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 39.37 115.57 0)
+		(property "Description" "CAP CER 1UF 25V X7R 0805"
+			(at 78.74 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2413,22 +2495,58 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "Digikey" "399-C0805C105K3RACTUCT-ND"
+			(at 78.74 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C0805C105K3RACTU"
+			(at 78.74 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 78.74 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "09843663-f6dd-4b03-a105-dc6ab721cb88")
 		)
 		(pin "1"
-			(uuid "069f3633-b2f8-492e-832f-305a8ab07744")
+			(uuid "8cca5368-58f1-41ba-9324-8887bdc1ee62")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
-					(reference "#PWR08")
+					(reference "C4")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 29.21 125.73 0)
+		(lib_id "Device:C")
+		(at 134.62 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2436,31 +2554,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2226b647-6c58-4d2d-9c51-aa3324debf51")
-		(property "Reference" "#PWR07"
-			(at 29.21 132.08 0)
-			(hide yes)
+		(uuid "344623fc-92ca-4af1-9636-12d33dc43af6")
+		(property "Reference" "C6"
+			(at 134.874 42.164 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 29.21 130.81 0)
+		(property "Value" "1u"
+			(at 135.128 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 29.21 125.73 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 135.5852 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2471,7 +2589,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 125.73 0)
+			(at 134.62 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2481,8 +2599,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 29.21 125.73 0)
+		(property "Description" "CAP CER 1UF 25V X7R 0805"
+			(at 134.62 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2491,14 +2609,50 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "Digikey" "399-C0805C105K3RACTUCT-ND"
+			(at 134.62 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C0805C105K3RACTU"
+			(at 134.62 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 134.62 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "09843663-f6dd-4b03-a105-dc6ab721cb88")
 		)
 		(pin "1"
-			(uuid "eccff7e8-0cc5-4cdd-9e1f-ff1d5ebf29ef")
+			(uuid "8cca5368-58f1-41ba-9324-8887bdc1ee62")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
-					(reference "#PWR07")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -2506,7 +2660,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 144.78 52.07 0)
+		(at 144.78 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2516,7 +2670,7 @@
 		(dnp no)
 		(uuid "3706eca4-b4f8-4871-a19a-e1184fc2898d")
 		(property "Reference" "#PWR014"
-			(at 144.78 55.88 0)
+			(at 144.78 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2527,7 +2681,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 141.478 50.546 0)
+			(at 141.478 36.576 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2537,7 +2691,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 52.07 0)
+			(at 144.78 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2548,7 +2702,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 52.07 0)
+			(at 144.78 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2559,7 +2713,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 144.78 52.07 0)
+			(at 144.78 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2573,7 +2727,7 @@
 			(uuid "44675825-e80c-43e1-b05e-5f4b7f836ec3")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
 					(reference "#PWR014")
 					(unit 1)
@@ -2592,7 +2746,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3db11d7c-46f2-4fff-b4c8-372ce6fd43fa")
-		(property "Reference" "C4"
+		(property "Reference" "C1"
 			(at 107.95 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2709,9 +2863,9 @@
 			(uuid "e4074947-fbfe-4fe9-ae7e-51fd73c0b01d")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
-					(reference "C4")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -2832,7 +2986,7 @@
 			(uuid "103e7cf5-ee15-4eab-9edb-5c1e28b6f010")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
 					(reference "TP1")
 					(unit 1)
@@ -2842,7 +2996,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 39.37 125.73 0)
+		(at 125.73 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2853,7 +3007,7 @@
 		(fields_autoplaced yes)
 		(uuid "69971b06-7f32-4646-a19a-5f3431344b3a")
 		(property "Reference" "#PWR09"
-			(at 39.37 132.08 0)
+			(at 125.73 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2864,7 +3018,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 39.37 130.81 0)
+			(at 125.73 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2874,7 +3028,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 125.73 0)
+			(at 125.73 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2885,7 +3039,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 125.73 0)
+			(at 125.73 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2896,7 +3050,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 39.37 125.73 0)
+			(at 125.73 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2910,7 +3064,7 @@
 			(uuid "2f79abf9-e41c-4119-9710-7bcb28edeb54")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
 					(reference "#PWR09")
 					(unit 1)
@@ -2919,86 +3073,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 29.21 115.57 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6cba6c96-381f-4268-a957-99a456f6d9bb")
-		(property "Reference" "#PWR06"
-			(at 29.21 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VDD"
-			(at 29.21 110.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 29.21 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 29.21 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 29.21 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0b7ce221-d53a-49f1-8412-0470b80f2bf3")
-		)
-		(instances
-			(project "LEOS-stack-template"
-				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 39.37 120.65 0)
+		(at 125.73 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3007,8 +3083,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7d4931ca-9d8b-4f34-b5b6-62d4d698afce")
-		(property "Reference" "C3"
-			(at 39.878 118.618 0)
+		(property "Reference" "C5"
+			(at 126.238 42.418 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3019,7 +3095,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 39.878 122.936 0)
+			(at 126.238 46.736 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3030,7 +3106,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 40.3352 124.46 0)
+			(at 126.6952 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3041,7 +3117,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 120.65 0)
+			(at 125.73 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3052,7 +3128,7 @@
 			)
 		)
 		(property "Description" "0.1uF 50V X7R 0805"
-			(at 39.37 120.65 0)
+			(at 125.73 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3063,7 +3139,7 @@
 			)
 		)
 		(property "Digikey" "1276-1003-1-ND"
-			(at 39.37 120.65 0)
+			(at 125.73 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3074,7 +3150,7 @@
 			)
 		)
 		(property "LCSC" "C1711"
-			(at 39.37 120.65 0)
+			(at 125.73 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3085,7 +3161,7 @@
 			)
 		)
 		(property "MPN" "CL21B104KBCNNNC"
-			(at 39.37 120.65 0)
+			(at 125.73 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3096,7 +3172,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 39.37 120.65 0)
+			(at 125.73 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3107,7 +3183,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 39.37 120.65 0)
+			(at 125.73 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3124,9 +3200,9 @@
 			(uuid "f1b49453-3dfd-4c56-bc6a-02240d55ec39")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
-					(reference "C3")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -3202,7 +3278,7 @@
 			(uuid "aa1d3c33-67fd-49d2-8ff2-c188046ed134")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
 					(reference "#PWR015")
 					(unit 1)
@@ -3325,7 +3401,7 @@
 			(uuid "8301f632-5144-4a65-8adb-b9796f8f97c2")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
 					(reference "TP2")
 					(unit 1)
@@ -3335,7 +3411,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 147.32 52.07 0)
+		(at 147.32 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3345,7 +3421,7 @@
 		(dnp no)
 		(uuid "a492063e-01fa-4d00-be44-b3e2abd5771a")
 		(property "Reference" "#PWR016"
-			(at 147.32 55.88 0)
+			(at 147.32 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3356,7 +3432,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 150.368 50.546 0)
+			(at 150.368 36.576 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3366,7 +3442,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 52.07 0)
+			(at 147.32 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3377,7 +3453,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 52.07 0)
+			(at 147.32 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3388,7 +3464,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 147.32 52.07 0)
+			(at 147.32 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3402,7 +3478,7 @@
 			(uuid "316c2a49-4502-41fb-9ee8-f7d55e79469f")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
 					(reference "#PWR016")
 					(unit 1)
@@ -3412,7 +3488,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 66.04 55.88 0)
+		(at 66.04 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3420,10 +3496,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b343f19b-2782-4558-9457-9188d7ca7297")
 		(property "Reference" "#PWR010"
-			(at 66.04 59.69 0)
+			(at 66.04 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3434,7 +3509,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 66.04 50.8 0)
+			(at 62.992 35.306 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3444,7 +3519,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 55.88 0)
+			(at 66.04 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3455,7 +3530,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 55.88 0)
+			(at 66.04 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3466,7 +3541,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 66.04 55.88 0)
+			(at 66.04 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3480,7 +3555,7 @@
 			(uuid "3a4ef61e-7b5c-4206-9709-2be720d8a064")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
 					(reference "#PWR010")
 					(unit 1)
@@ -3490,7 +3565,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 29.21 120.65 0)
+		(at 152.4 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3499,8 +3574,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b8a2e51d-d10d-4d48-9969-d442894ab689")
-		(property "Reference" "C2"
-			(at 30.226 118.11 0)
+		(property "Reference" "C7"
+			(at 153.416 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3511,7 +3586,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 29.718 122.936 0)
+			(at 152.908 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3522,7 +3597,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 30.1752 124.46 0)
+			(at 153.3652 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3533,7 +3608,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 120.65 0)
+			(at 152.4 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3544,7 +3619,7 @@
 			)
 		)
 		(property "Description" "0.1uF 50V X7R 0805"
-			(at 29.21 120.65 0)
+			(at 152.4 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3555,7 +3630,7 @@
 			)
 		)
 		(property "Digikey" "1276-1003-1-ND"
-			(at 29.21 120.65 0)
+			(at 152.4 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3566,7 +3641,7 @@
 			)
 		)
 		(property "LCSC" "C1711"
-			(at 29.21 120.65 0)
+			(at 152.4 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3577,7 +3652,7 @@
 			)
 		)
 		(property "MPN" "CL21B104KBCNNNC"
-			(at 29.21 120.65 0)
+			(at 152.4 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3588,7 +3663,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 29.21 120.65 0)
+			(at 152.4 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3599,7 +3674,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 29.21 120.65 0)
+			(at 152.4 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3616,9 +3691,9 @@
 			(uuid "2465a434-9dd7-49ca-9c2b-c2f4d48efbb3")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
-					(reference "C2")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -3635,7 +3710,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ba834844-a990-41f7-a3ad-cd3e5de24bea")
-		(property "Reference" "C5"
+		(property "Reference" "C2"
 			(at 107.95 82.804 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3752,9 +3827,9 @@
 			(uuid "ab026e0c-e079-4a75-8031-cf8ee36014b1")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
-					(reference "C5")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -3830,7 +3905,7 @@
 			(uuid "3955d380-48f5-4c67-8ffc-2c8a65f2bced")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
 					(reference "#PWR012")
 					(unit 1)
@@ -3983,7 +4058,7 @@
 			(uuid "93650907-fc27-4d45-97b4-5c31084ccf7e")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
 					(reference "U2")
 					(unit 1)
@@ -4061,7 +4136,7 @@
 			(uuid "bcbc6eb2-4ed8-4084-88fe-46a6ce046b04")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
 					(reference "#PWR011")
 					(unit 1)
@@ -4232,7 +4307,7 @@
 			(uuid "4a454b15-8e73-4812-9486-bcde88f39368")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
 					(reference "U1")
 					(unit 1)
@@ -4241,8 +4316,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 19.05 115.57 0)
+		(lib_id "power:GND")
+		(at 152.4 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4251,9 +4326,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "cf839ec7-6bb4-41f0-9fd7-df0b443ef84a")
-		(property "Reference" "#PWR04"
-			(at 19.05 119.38 0)
+		(uuid "de49df63-9fff-4f7a-be4b-fba9bbaa5d70")
+		(property "Reference" "#PWR06"
+			(at 152.4 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4263,8 +4338,8 @@
 				)
 			)
 		)
-		(property "Value" "VDD"
-			(at 19.05 110.49 0)
+		(property "Value" "GND"
+			(at 152.4 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4274,7 +4349,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 19.05 115.57 0)
+			(at 152.4 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4285,7 +4360,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 19.05 115.57 0)
+			(at 152.4 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4295,8 +4370,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 19.05 115.57 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 152.4 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4307,12 +4382,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "618872aa-4a40-43cc-bd70-d397242ae92e")
+			(uuid "85343ea8-30f9-4c1e-930e-83d7579d446d")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
-					(reference "#PWR04")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -4387,7 +4462,7 @@
 			(uuid "10b1c078-6eb4-4c66-8bcc-314507fbee31")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
 					(reference "#PWR013")
 					(unit 1)
@@ -4527,7 +4602,7 @@
 			(uuid "60df8f00-285d-451b-8df0-cd919e17460a")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
 					(reference "Y1")
 					(unit 1)
@@ -4537,7 +4612,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 19.05 120.65 0)
+		(at 69.85 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4546,8 +4621,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f938d164-8f59-4ed0-b0dc-820548cb71f6")
-		(property "Reference" "C1"
-			(at 19.812 118.11 0)
+		(property "Reference" "C3"
+			(at 70.612 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4558,7 +4633,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 19.558 122.936 0)
+			(at 70.358 46.736 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4569,7 +4644,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 20.0152 124.46 0)
+			(at 70.8152 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4580,7 +4655,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 19.05 120.65 0)
+			(at 69.85 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4591,7 +4666,7 @@
 			)
 		)
 		(property "Description" "0.1uF 50V X7R 0805"
-			(at 19.05 120.65 0)
+			(at 69.85 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4602,7 +4677,7 @@
 			)
 		)
 		(property "Digikey" "1276-1003-1-ND"
-			(at 19.05 120.65 0)
+			(at 69.85 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4613,7 +4688,7 @@
 			)
 		)
 		(property "LCSC" "C1711"
-			(at 19.05 120.65 0)
+			(at 69.85 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4624,7 +4699,7 @@
 			)
 		)
 		(property "MPN" "CL21B104KBCNNNC"
-			(at 19.05 120.65 0)
+			(at 69.85 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4635,7 +4710,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 19.05 120.65 0)
+			(at 69.85 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4646,7 +4721,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 19.05 120.65 0)
+			(at 69.85 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4663,9 +4738,9 @@
 			(uuid "5057c9d1-73fb-4774-ae28-c9ff739f2a2e")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/5dc8edec-1b34-44a9-a38e-40874919c30b"
-					(reference "C1")
+					(reference "C3")
 					(unit 1)
 				)
 			)

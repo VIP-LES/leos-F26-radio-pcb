@@ -5,16 +5,167 @@
 	(uuid "3703ddf2-8141-438d-86a8-1eaec9672d0d")
 	(paper "A4")
 	(title_block
-		(title "LEOS Microcontroller")
-		(date "2026-08-04")
-		(rev "3.0")
+		(title "LEOS Radio")
+		(date "2026-10-05")
+		(rev "1.0")
 		(company "VIP Lightning From the Edge of Space")
-		(comment 1 "Use Pinout.xyz with the Pico 2 for a look at what pins can be configured to.")
-		(comment 2 "We now prefer using sheets to isolate domains.")
-		(comment 3 "Be sure to bump the revision number and rename the root file to your module name.")
-		(comment 4 "Use this sheet to define connections to your components/circuitry.")
 	)
 	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_Module:RaspberryPi_Pico"
 			(pin_names
 				(offset 0.762)
@@ -1480,18 +1631,6 @@
 		(uuid "37726217-d42a-4510-a9ac-354a76660e35")
 	)
 	(rectangle
-		(start 178.816 61.595)
-		(end 279.146 150.495)
-		(stroke
-			(width 0.25)
-			(type dash)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "b8cbbb1b-f183-4bac-a8b7-3027a9d80ce7")
-	)
-	(rectangle
 		(start 128.27 87.63)
 		(end 147.32 92.71)
 		(stroke
@@ -1502,19 +1641,6 @@
 			(type none)
 		)
 		(uuid "ccee0550-8171-4e02-ad8f-0e41a0381aa7")
-	)
-	(text "This is the schematic for a circuit board module used in the LEOS Stack.\nOther than the standard CAN networking chips and Raspberry Pi Pico,\nthis is your blank slate for creating any application designs."
-		(exclude_from_sim no)
-		(at 179.959 66.802 0)
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "355d3ce0-00c9-4fa0-9425-22a0887947a6")
 	)
 	(text "SPI1"
 		(exclude_from_sim no)
@@ -1530,7 +1656,7 @@
 	)
 	(text "Raspberry Pi Pico"
 		(exclude_from_sim no)
-		(at 147.32 49.276 0)
+		(at 146.558 30.988 0)
 		(effects
 			(font
 				(size 3 3)
@@ -1550,16 +1676,6 @@
 			(justify left)
 		)
 		(uuid "45278158-7081-4a0c-b47c-c61b333e0086")
-	)
-	(text "Have Fun! Delete this box once you start designing."
-		(exclude_from_sim no)
-		(at 207.645 148.59 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "47bc0f6d-30a2-4ccb-aaf3-a06c39164b99")
 	)
 	(text "Since CANbus is very high \nthroughput, avoid using SPI0 for\nany other devices."
 		(exclude_from_sim no)
@@ -1604,17 +1720,6 @@
 			(justify left)
 		)
 		(uuid "a1aafb31-e649-49c2-8ff8-6c542107781b")
-	)
-	(text "When authoring new schematics, remember these key points:\n1. Ensure your page information is up to date.\n	- keep the revision number, page title, and supporting text up\n	to date with the design. This document should be self-explanatory as\n	often as possible.\n	- Delete the help text in the root sheet.\n2. Commit your work into GitHub \n	- Make incremental changes to the schematic and layout,\n	but ensure that any commit is not a fragmented mess of changes.\n	- Use descriptive commit messages that convey what was updated.\n	Longer descriptions of changes or issues can be included as a 2nd/3rd\n	line in Kicad/Git commits. Don't just say \"updated layout\"...\n	- Avoid committing generated files, junk files, or gerbers. If a file\n	can be generated from the existing schematic and kicad sources, it does\n	not need to be version controlled.\n3. Ensure each symbol and footprint matches what you have selected for your\n	Bill of Materials (table looking button in top bar).\n	- Review, Review, Review!\n	Small discrepancies, pin requirements, or sourcing troubles can set your team\n	back weeks. Always ensure your planned design is able to be ordered and\n	follows the given recommendations and application implementations.\n	- Follow this project's structure of documenting the Manufacturer,\n	MPN (Manufacturer's Part Number) and Digikey columns for each part.\n	These items are conveniently listed next to the image of a part on\n	Digikey.com.\n4. Use realistic part sizes. \n	- Dont use a 0201 package when you could use 1206. While our design\n	does use surface mount soldering, its best to use as large of a size\n	as you are comfortable soldering. SOIC, 0805, 1206, SOT, and TSSOP\n	are pretty easy to reflow and hand-place.\n	"
-		(exclude_from_sim no)
-		(at 180.467 109.982 0)
-		(effects
-			(font
-				(size 1.5 1.5)
-			)
-			(justify left)
-		)
-		(uuid "aaac9310-9ada-47e6-aed7-64c4c927bf0c")
 	)
 	(text "UART0"
 		(exclude_from_sim no)
@@ -1662,25 +1767,25 @@
 		)
 		(uuid "f9629eaa-84f4-4d44-8243-599bae7943cc")
 	)
+	(junction
+		(at 142.24 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05351980-35eb-404a-ae2c-3602c52f3ea5")
+	)
+	(junction
+		(at 160.02 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08245b03-d5e2-4c37-a7a3-06a58613ee62")
+	)
 	(no_connect
 		(at 147.32 66.04)
 		(uuid "0104658e-3710-4b4c-add1-5174fabafc25")
 	)
 	(no_connect
-		(at 124.46 114.3)
-		(uuid "02824eb8-ead5-4835-b538-54d74a349b16")
-	)
-	(no_connect
 		(at 170.18 106.68)
 		(uuid "13b6dee6-3c20-436c-90db-e581b821ed33")
-	)
-	(no_connect
-		(at 170.18 99.06)
-		(uuid "25f484c5-21fd-4806-ac8e-00537f94864d")
-	)
-	(no_connect
-		(at 170.18 93.98)
-		(uuid "35155b2a-7fc6-4d23-81d1-639608a65c9b")
 	)
 	(no_connect
 		(at 124.46 83.82)
@@ -1703,10 +1808,6 @@
 		(uuid "49f1bc01-3a64-48f6-8dd8-8fb9aa9ffb3d")
 	)
 	(no_connect
-		(at 124.46 116.84)
-		(uuid "4e29a29c-ecef-4f39-9568-21647b29922c")
-	)
-	(no_connect
 		(at 170.18 91.44)
 		(uuid "55251e61-cc32-4309-ac0d-672345d38fb0")
 	)
@@ -1717,14 +1818,6 @@
 	(no_connect
 		(at 124.46 91.44)
 		(uuid "5cb8ce4e-c3d3-4246-85bc-5fa0d82a4811")
-	)
-	(no_connect
-		(at 124.46 127)
-		(uuid "6f06dba8-7768-4144-a990-283d930b0353")
-	)
-	(no_connect
-		(at 124.46 119.38)
-		(uuid "6fbd58b5-8635-46d7-80e3-882d8ab65428")
 	)
 	(no_connect
 		(at 124.46 88.9)
@@ -1751,20 +1844,12 @@
 		(uuid "bb1ac86e-b1c2-4071-96c7-f214859b39d7")
 	)
 	(no_connect
-		(at 124.46 121.92)
-		(uuid "da57878b-1ad7-4c98-a8ab-39ac862df87d")
-	)
-	(no_connect
 		(at 170.18 104.14)
 		(uuid "e43b56d4-6895-4af4-babc-0a4fdce295d2")
 	)
 	(no_connect
 		(at 170.18 111.76)
 		(uuid "f8b276ca-c584-4bff-9561-9f29387fca67")
-	)
-	(no_connect
-		(at 170.18 101.6)
-		(uuid "f9ed1f32-dcf7-4d95-b4e0-94bda4b8d724")
 	)
 	(wire
 		(pts
@@ -1778,6 +1863,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 132.08) (xy 124.46 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "173c35f1-86ec-4bd7-b088-e0e5be8dcc71")
+	)
+	(wire
+		(pts
 			(xy 95.25 101.6) (xy 124.46 101.6)
 		)
 		(stroke
@@ -1785,6 +1880,46 @@
 			(type default)
 		)
 		(uuid "2c7e4451-edea-45cd-ab9d-a408a713260c")
+	)
+	(wire
+		(pts
+			(xy 99.06 114.3) (xy 124.46 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3383e64a-dccf-4a60-902b-3ddbe52c351f")
+	)
+	(wire
+		(pts
+			(xy 181.61 153.67) (xy 181.61 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33fe8dd7-2d30-4c35-9cec-3cf4b4292d99")
+	)
+	(wire
+		(pts
+			(xy 99.06 134.62) (xy 121.92 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35e0174d-4232-4785-9e69-32527a3aaddf")
+	)
+	(wire
+		(pts
+			(xy 181.61 101.6) (xy 170.18 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a166026-5be7-46e0-95dd-cc97db8c3e30")
 	)
 	(wire
 		(pts
@@ -1798,13 +1933,83 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 62.23) (xy 142.24 66.04)
+			(xy 99.06 132.08) (xy 124.46 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6375c496-80e8-46d7-ace6-c52eff1b572d")
+	)
+	(wire
+		(pts
+			(xy 99.06 121.92) (xy 124.46 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ca60ce3-e3f5-407b-bdc1-4954118aa05c")
+	)
+	(wire
+		(pts
+			(xy 121.92 153.67) (xy 181.61 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70fda999-ebae-4b9b-bc5a-c598166ee7c0")
+	)
+	(wire
+		(pts
+			(xy 99.06 129.54) (xy 127 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "755982ff-1e78-4e36-bc5b-9716576d3828")
+	)
+	(wire
+		(pts
+			(xy 179.07 151.13) (xy 179.07 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88e54289-776c-4174-bef1-de2ae9d2a4cb")
+	)
+	(wire
+		(pts
+			(xy 121.92 134.62) (xy 121.92 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a8623b8-43b0-4c1d-8107-249cfc81cfa1")
+	)
+	(wire
+		(pts
+			(xy 142.24 52.07) (xy 142.24 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8ae8a725-be58-474f-9690-9928217dea90")
+	)
+	(wire
+		(pts
+			(xy 127 129.54) (xy 127 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b174ea1-6166-42b6-b9a8-78a0edfde633")
 	)
 	(wire
 		(pts
@@ -1815,16 +2020,6 @@
 			(type default)
 		)
 		(uuid "8bab3a4f-9f96-4dbf-a89f-14c4f82ca150")
-	)
-	(wire
-		(pts
-			(xy 152.4 66.04) (xy 152.4 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8bb94604-acf2-423a-a66e-875f89d52a16")
 	)
 	(wire
 		(pts
@@ -1845,6 +2040,116 @@
 			(type default)
 		)
 		(uuid "9bf1b6b6-5a49-4b83-9d29-a27b625cb368")
+	)
+	(wire
+		(pts
+			(xy 99.06 127) (xy 124.46 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cf8c0d4-afa1-4944-93e4-dbf54c0f3d48")
+	)
+	(wire
+		(pts
+			(xy 176.53 148.59) (xy 176.53 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2b495d9-f954-4fb3-8faa-32bf76184d14")
+	)
+	(wire
+		(pts
+			(xy 179.07 93.98) (xy 170.18 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad6fad19-b442-4a5d-b94a-0a56b91f9fd4")
+	)
+	(wire
+		(pts
+			(xy 99.06 119.38) (xy 124.46 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b26c3829-4014-4005-a6d3-0188b75df7b8")
+	)
+	(wire
+		(pts
+			(xy 135.89 52.07) (xy 142.24 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6997a9f-05b2-47de-9c54-18b85eb016d1")
+	)
+	(wire
+		(pts
+			(xy 99.06 116.84) (xy 124.46 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9788478-aac3-400d-bd67-eb06631050da")
+	)
+	(wire
+		(pts
+			(xy 160.02 52.07) (xy 152.4 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0639ab1-2265-469f-aba8-200569475364")
+	)
+	(wire
+		(pts
+			(xy 176.53 99.06) (xy 170.18 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c09412d2-1a9d-4451-a04c-ea7a020a3a34")
+	)
+	(wire
+		(pts
+			(xy 127 148.59) (xy 176.53 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2436ced-8e19-4434-999c-4f4953d963e2")
+	)
+	(wire
+		(pts
+			(xy 152.4 52.07) (xy 152.4 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb9a3e00-157b-478d-a3b6-b3bb14aecbae")
+	)
+	(wire
+		(pts
+			(xy 124.46 151.13) (xy 179.07 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d630b62e-5e1a-4329-8ab2-9e6637fb4c66")
 	)
 	(wire
 		(pts
@@ -2087,9 +2392,165 @@
 			(uuid "8c0985e3-7f28-4375-bd2f-5d95e88f0969")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
 					(reference "A1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2dde8978-ae17-492e-b8e5-9cfdc31b1352")
+		(property "Reference" "#PWR025"
+			(at 160.02 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 160.02 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "07da074c-9d16-418e-9956-8be8f5cfdb12")
+		)
+		(instances
+			(project "LEOS-F26-radio"
+				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 135.89 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3cda36ff-935a-4dcc-ac65-ab516bb0ff4f")
+		(property "Reference" "#PWR024"
+			(at 135.89 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 135.89 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 135.89 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4defb29d-e37e-4eeb-812b-a96be166a570")
+		)
+		(instances
+			(project "LEOS-F26-radio"
+				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -2165,7 +2626,7 @@
 			(uuid "f654926a-420d-4b6d-a95d-34ccbdded4c7")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
 					(reference "#PWR02")
 					(unit 1)
@@ -2174,8 +2635,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 142.24 62.23 0)
+		(lib_id "Device:C")
+		(at 160.02 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2183,31 +2644,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9c525191-358a-48e5-ac98-7b54e45d6083")
-		(property "Reference" "#PWR01"
-			(at 142.24 66.04 0)
-			(hide yes)
+		(uuid "5f5b7a68-5a98-4505-b9f0-7c885e884a93")
+		(property "Reference" "C11"
+			(at 161.29 53.594 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "+5V"
-			(at 142.24 57.15 0)
+		(property "Value" "10u"
+			(at 161.544 58.166 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 142.24 62.23 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 160.9852 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2218,7 +2679,121 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 62.23 0)
+			(at 160.02 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 10UF 16V X7R 0805"
+			(at 160.02 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "1276-2872-1-ND"
+			(at 160.02 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL21B106KOQNNNE"
+			(at 160.02 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 160.02 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "222a964d-28a4-4bbd-972d-00041bdc6a2a")
+		)
+		(pin "2"
+			(uuid "b64b0f94-da27-445e-88ad-27cf08304fa6")
+		)
+		(instances
+			(project "LEOS-F26-radio"
+				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 142.24 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c525191-358a-48e5-ac98-7b54e45d6083")
+		(property "Reference" "#PWR01"
+			(at 142.24 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 142.24 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2229,7 +2804,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 142.24 62.23 0)
+			(at 142.24 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2243,7 +2818,7 @@
 			(uuid "f1490e40-6671-45c3-9e15-00a98fb902a4")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
 					(reference "#PWR01")
 					(unit 1)
@@ -2253,7 +2828,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 152.4 62.23 0)
+		(at 160.02 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2264,7 +2839,7 @@
 		(fields_autoplaced yes)
 		(uuid "c82de2de-6c37-4d8e-ac83-79d273a51037")
 		(property "Reference" "#PWR03"
-			(at 152.4 66.04 0)
+			(at 160.02 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2275,7 +2850,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 152.4 57.15 0)
+			(at 160.02 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2285,7 +2860,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 62.23 0)
+			(at 160.02 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2296,7 +2871,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 62.23 0)
+			(at 160.02 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2307,7 +2882,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 152.4 62.23 0)
+			(at 160.02 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2321,9 +2896,134 @@
 			(uuid "42d36707-f949-4b3a-acf0-4cce4c734fae")
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 135.89 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f29014a7-d936-4cb1-bbed-a014129b3138")
+		(property "Reference" "C10"
+			(at 136.652 53.594 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 136.652 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 136.8552 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0.1uF 50V X7R 0805"
+			(at 135.89 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "1276-1003-1-ND"
+			(at 135.89 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1711"
+			(at 135.89 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL21B104KBCNNNC"
+			(at 135.89 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 135.89 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "222a964d-28a4-4bbd-972d-00041bdc6a2a")
+		)
+		(pin "2"
+			(uuid "b64b0f94-da27-445e-88ad-27cf08304fa6")
+		)
+		(instances
+			(project "LEOS-F26-radio"
+				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -2388,7 +3088,7 @@
 			)
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
 					(page "3")
 				)
@@ -2504,9 +3204,135 @@
 			)
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-F26-radio"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 78.74 110.49)
+		(size 20.32 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f1b94a6e-6c59-4888-a7e6-b378465c6334")
+		(property "Sheetname" "RF"
+			(at 78.74 109.7784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "RF.kicad_sch"
+			(at 78.74 139.0146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "BUSY" input
+			(at 99.06 129.54 0)
+			(uuid "0117921a-dc26-4dec-8804-92446efecb4d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CS" input
+			(at 99.06 121.92 0)
+			(uuid "e8a6cb7a-db49-4bca-8a51-43bacc19cfbb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "INT" input
+			(at 99.06 132.08 0)
+			(uuid "486afcd9-4e5c-4656-aab7-c7404a54d3f3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MISO" output
+			(at 99.06 119.38 0)
+			(uuid "56f3eec1-064f-48c0-842d-f61f5e8bc98f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MOSI" input
+			(at 99.06 116.84 0)
+			(uuid "51bfd5cb-b3cb-4ff6-8f1f-186c4710279b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "nRESET" input
+			(at 99.06 127 0)
+			(uuid "fd912d77-5c11-4e14-b30b-7dbdafb2b5af")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RXEN" input
+			(at 99.06 134.62 0)
+			(uuid "a3687bfc-b46b-4eec-87a6-6d4f620c7bd6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SCK" input
+			(at 99.06 114.3 0)
+			(uuid "2bccbe9a-2325-4df8-a613-2a44da4096fb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "LEOS-F26-radio"
+				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
+					(page "4")
 				)
 			)
 		)

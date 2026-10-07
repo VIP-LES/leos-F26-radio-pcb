@@ -264,7 +264,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "3.0"
+      "sch_revision": "1.0"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -513,7 +513,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "LEOS-stack-template.kicad_pro",
+    "filename": "LEOS-F26-radio.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -654,7 +654,7 @@
           "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -690,7 +690,7 @@
           "group_by": false,
           "label": "LCSC",
           "name": "LCSC",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -702,6 +702,12 @@
           "group_by": false,
           "label": "Sim.Pins",
           "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
           "show": false
         }
       ],
@@ -756,18 +762,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "LEOS-stack-template.kicad_sch",
-        "name": "LEOS-stack-template",
+        "filename": "LEOS-F26-radio.kicad_sch",
+        "name": "LEOS-F26-radio",
         "uuid": "3703ddf2-8141-438d-86a8-1eaec9672d0d"
       }
     ],
-    "used_designators": "U1-2,TP1-4,R1,J1-2,#FLG1,Y1-2,#PWR1-22,A1,C1-7,C10",
+    "used_designators": "U1-3,TP1-4,J1-3,R1-2,#FLG1,Y1-2,A1,#PWR1-26,C1-14",
     "variants": []
   },
   "sheets": [
     [
       "3703ddf2-8141-438d-86a8-1eaec9672d0d",
-      "LEOS-stack-template"
+      "LEOS-F26-radio"
     ],
     [
       "5dc8edec-1b34-44a9-a38e-40874919c30b",
@@ -776,6 +782,10 @@
     [
       "341d819d-3d1a-4f8b-94f1-4c6aaa16d806",
       "Connectors"
+    ],
+    [
+      "f1b94a6e-6c59-4888-a7e6-b378465c6334",
+      "RF"
     ]
   ],
   "text_variables": {},
