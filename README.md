@@ -1,6 +1,6 @@
 # LEOS Radio PCB
 
-![3D render of the LEOS Radio PCB](screenshots/3Dradioboard.png)
+![3D render of the LEOS Radio PCB](screenshots/3D.png)
 
 This repository contains the KiCad schematic and PCB layout for the LEOS Radio PCB made fall 2026. The board integrates a Raspberry Pi Pico, an E22-900M30S LoRa radio module, and a CAN-FD interface.
 
