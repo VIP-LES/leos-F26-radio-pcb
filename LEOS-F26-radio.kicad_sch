@@ -7,7 +7,7 @@
 	(title_block
 		(title "LEOS Radio")
 		(date "2026-10-05")
-		(rev "1.0")
+		(rev "2.1")
 		(company "VIP Lightning From the Edge of Space")
 	)
 	(lib_symbols
@@ -1844,10 +1844,6 @@
 		(uuid "bb1ac86e-b1c2-4071-96c7-f214859b39d7")
 	)
 	(no_connect
-		(at 170.18 104.14)
-		(uuid "e43b56d4-6895-4af4-babc-0a4fdce295d2")
-	)
-	(no_connect
 		(at 170.18 111.76)
 		(uuid "f8b276ca-c584-4bff-9561-9f29387fca67")
 	)
@@ -1873,6 +1869,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 104.14) (xy 170.18 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bac41e1-5503-48b7-9827-234eefae7f76")
+	)
+	(wire
+		(pts
 			(xy 95.25 101.6) (xy 124.46 101.6)
 		)
 		(stroke
@@ -1883,7 +1889,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 114.3) (xy 124.46 114.3)
+			(xy 95.25 114.3) (xy 124.46 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1903,13 +1909,23 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 134.62) (xy 121.92 134.62)
+			(xy 95.25 134.62) (xy 121.92 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "35e0174d-4232-4785-9e69-32527a3aaddf")
+	)
+	(wire
+		(pts
+			(xy 184.15 156.21) (xy 184.15 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "397b0146-e6d7-42ea-bffb-64f717959703")
 	)
 	(wire
 		(pts
@@ -1933,7 +1949,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 132.08) (xy 124.46 132.08)
+			(xy 95.25 132.08) (xy 124.46 132.08)
 		)
 		(stroke
 			(width 0)
@@ -1943,7 +1959,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 121.92) (xy 124.46 121.92)
+			(xy 95.25 121.92) (xy 124.46 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1963,7 +1979,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 129.54) (xy 127 129.54)
+			(xy 95.25 129.54) (xy 127 129.54)
 		)
 		(stroke
 			(width 0)
@@ -2023,6 +2039,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 137.16) (xy 119.38 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92141280-a48c-4ff6-9329-3178207b02b6")
+	)
+	(wire
+		(pts
 			(xy 73.66 100.33) (xy 80.01 100.33)
 		)
 		(stroke
@@ -2043,7 +2069,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 127) (xy 124.46 127)
+			(xy 95.25 127) (xy 124.46 127)
 		)
 		(stroke
 			(width 0)
@@ -2073,7 +2099,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 119.38) (xy 124.46 119.38)
+			(xy 95.25 119.38) (xy 124.46 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2093,7 +2119,17 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 116.84) (xy 124.46 116.84)
+			(xy 119.38 156.21) (xy 184.15 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8b48017-9940-4f31-80cc-4444ddf4e839")
+	)
+	(wire
+		(pts
+			(xy 95.25 116.84) (xy 124.46 116.84)
 		)
 		(stroke
 			(width 0)
@@ -2160,6 +2196,16 @@
 			(type default)
 		)
 		(uuid "f9382656-9821-4f58-860f-287dd1ceacbb")
+	)
+	(wire
+		(pts
+			(xy 95.25 137.16) (xy 119.38 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff8b5269-1c37-4c8b-af55-ec94f4b08dca")
 	)
 	(symbol
 		(lib_id "MCU_Module:RaspberryPi_Pico")
@@ -3015,10 +3061,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "222a964d-28a4-4bbd-972d-00041bdc6a2a")
+			(uuid "222a964d-28a4-4bbd-972d-00041bdc6a2b")
 		)
 		(pin "2"
-			(uuid "b64b0f94-da27-445e-88ad-27cf08304fa6")
+			(uuid "b64b0f94-da27-445e-88ad-27cf08304fa7")
 		)
 		(instances
 			(project "LEOS-F26-radio"
@@ -3212,8 +3258,8 @@
 		)
 	)
 	(sheet
-		(at 78.74 110.49)
-		(size 20.32 27.94)
+		(at 52.07 110.49)
+		(size 43.18 33.02)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3228,7 +3274,7 @@
 		)
 		(uuid "f1b94a6e-6c59-4888-a7e6-b378465c6334")
 		(property "Sheetname" "RF"
-			(at 78.74 109.7784 0)
+			(at 52.07 109.7784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3239,7 +3285,7 @@
 			)
 		)
 		(property "Sheetfile" "RF.kicad_sch"
-			(at 78.74 139.0146 0)
+			(at 52.07 144.0946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3249,8 +3295,8 @@
 				(justify left top)
 			)
 		)
-		(pin "BUSY" input
-			(at 99.06 129.54 0)
+		(pin "BUSY" output
+			(at 95.25 129.54 0)
 			(uuid "0117921a-dc26-4dec-8804-92446efecb4d")
 			(effects
 				(font
@@ -3260,7 +3306,7 @@
 			)
 		)
 		(pin "CS" input
-			(at 99.06 121.92 0)
+			(at 95.25 121.92 0)
 			(uuid "e8a6cb7a-db49-4bca-8a51-43bacc19cfbb")
 			(effects
 				(font
@@ -3269,8 +3315,8 @@
 				(justify right)
 			)
 		)
-		(pin "INT" input
-			(at 99.06 132.08 0)
+		(pin "INT" output
+			(at 95.25 132.08 0)
 			(uuid "486afcd9-4e5c-4656-aab7-c7404a54d3f3")
 			(effects
 				(font
@@ -3280,7 +3326,7 @@
 			)
 		)
 		(pin "MISO" output
-			(at 99.06 119.38 0)
+			(at 95.25 119.38 0)
 			(uuid "56f3eec1-064f-48c0-842d-f61f5e8bc98f")
 			(effects
 				(font
@@ -3290,7 +3336,7 @@
 			)
 		)
 		(pin "MOSI" input
-			(at 99.06 116.84 0)
+			(at 95.25 116.84 0)
 			(uuid "51bfd5cb-b3cb-4ff6-8f1f-186c4710279b")
 			(effects
 				(font
@@ -3300,7 +3346,7 @@
 			)
 		)
 		(pin "nRESET" input
-			(at 99.06 127 0)
+			(at 95.25 127 0)
 			(uuid "fd912d77-5c11-4e14-b30b-7dbdafb2b5af")
 			(effects
 				(font
@@ -3310,7 +3356,7 @@
 			)
 		)
 		(pin "RXEN" input
-			(at 99.06 134.62 0)
+			(at 95.25 137.16 0)
 			(uuid "a3687bfc-b46b-4eec-87a6-6d4f620c7bd6")
 			(effects
 				(font
@@ -3320,8 +3366,18 @@
 			)
 		)
 		(pin "SCK" input
-			(at 99.06 114.3 0)
+			(at 95.25 114.3 0)
 			(uuid "2bccbe9a-2325-4df8-a613-2a44da4096fb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TXEN" bidirectional
+			(at 95.25 134.62 0)
+			(uuid "d55d98c9-5e81-4eb9-a2a2-2d84a8e194bb")
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -7,7 +7,7 @@
 	(title_block
 		(title "LEOS CANbus")
 		(date "2026-10-05")
-		(rev "1.0")
+		(rev "2.1")
 		(company "VIP Lightning From the Edge of Space")
 	)
 	(lib_symbols
@@ -347,7 +347,7 @@
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 0 0)
+				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -397,7 +397,7 @@
 						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -2644,10 +2644,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "09843663-f6dd-4b03-a105-dc6ab721cb88")
+			(uuid "09843663-f6dd-4b03-a105-dc6ab721cb89")
 		)
 		(pin "1"
-			(uuid "8cca5368-58f1-41ba-9324-8887bdc1ee62")
+			(uuid "8cca5368-58f1-41ba-9324-8887bdc1ee63")
 		)
 		(instances
 			(project "LEOS-F26-radio"
@@ -2790,7 +2790,7 @@
 				)
 			)
 		)
-		(property "Description" "10pF 50V C0G/NP0 0805"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 106.68 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -3754,7 +3754,7 @@
 				)
 			)
 		)
-		(property "Description" "10pF 50V C0G/NP0 0805"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 106.68 80.01 0)
 			(hide yes)
 			(show_name no)

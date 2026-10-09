@@ -7,7 +7,7 @@
 	(title_block
 		(title "LEOS Connectors")
 		(date "2026-10-05")
-		(rev "1.0")
+		(rev "2.1")
 		(company "VIP Lightning From the Edge of Space")
 	)
 	(lib_symbols
